@@ -131,6 +131,13 @@ sem autoria).
 Python 3.12 · PyMuPDF · python-docx · openpyxl · python-pptx · pandas · Pillow · cryptography (CMS/PAdES) ·
 pywin32 (Office COM) · Microsoft Graph (urllib, app-only) · pytest · Claude Code (Skills) · Power BI (export).
 
+## Verificação, sanitização e licença
+
+- **Testes:** `py -3.12 -m pytest tests -q -p no:cacheprovider` → **103 passed** em 19/11/2026.
+- **Dados:** fictícios — cópia sanitizada de um sistema em uso real; nenhum dado de cliente ou de terceiro.
+- **Sanitização:** o que foi removido, trocado ou inventado nesta cópia está em [`SANITIZACAO.md`](SANITIZACAO.md).
+- **Licença:** todos os direitos reservados; leitura permitida para avaliação de portfólio — ver [`LICENSE`](LICENSE) e [`NOTICE`](NOTICE).
+
 ## Aviso
 
 *Dados fictícios. Versão sanitizada de um sistema em uso real; identificadores do cliente foram substituídos.*
