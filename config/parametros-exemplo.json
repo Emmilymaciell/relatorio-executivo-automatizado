@@ -1,0 +1,16 @@
+{
+  "_comentario": "Copie este arquivo para 'parametros.json' e ajuste a cada mês. numero_relatorio = índice da pasta mensal em '4. Produtos' (ex.: 14 -> '14. Agosto 2026'). data_documento e status_medicao podem ficar null: o processo tenta descobrir (capa da CG / planilha financeira) e só pergunta se realmente não achar.",
+  "numero_relatorio": 14,
+  "mes": "Agosto",
+  "mes_numero": 8,
+  "ano": 2026,
+  "periodo_inicio": "01/08/2026",
+  "periodo_fim": "31/08/2026",
+  "mes_anterior": "Julho",
+  "data_documento": null,
+  "status_medicao": null,
+  "_notas": {
+    "data_documento": "A data que aparece na CAPA gráfica da CG costuma ser a data oficial; alinhe o encerramento a ela. Se a capa for imagem não-editável, use a MESMA data no encerramento.",
+    "status_medicao": "Vem da planilha Quadro Financeiro (coluna Status). Ex.: 'Pago', 'Processado', 'Em análise', 'Não faturado'. Em julho/2026 foi 'Em análise'."
+  }
+}

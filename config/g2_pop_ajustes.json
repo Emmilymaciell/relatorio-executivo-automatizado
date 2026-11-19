@@ -1,0 +1,104 @@
+{
+  "_comentario": "EXEMPLO FICTÍCIO (versão pública). Ajustes por competência usados por scripts/manutencao/organizar_g2_pop.py. Regra: o nome final sai da Lista Mestre do G2 (produto, descrição, empreendimento); quando o PRÓPRIO DOCUMENTO contradiz a Lista, vale o documento e o caso vira MANUAL_REVIEW. Chave = nome ORIGINAL exato do arquivo.",
+  "15": {
+    "nome_relatorio": "Programa - Relatório Grupo 2 - Relatório de Produtos Mensal N°15 - 09 2026.pdf",
+    "por_arquivo": {
+      "NT-501.1 - Nota Técnica - Exemplo de Controle Topográfico RD103.pdf": {
+        "rodovia": "RD-103",
+        "descricao": "Nota Técnica - Exemplo de Controle Topográfico",
+        "motivo": "Exemplo fictício: a capa do documento indica RD-103; a Lista Mestre registrava outra rodovia."
+      },
+      "NT-502.1 - Anexos.zip": {
+        "rodovia": "RD-104",
+        "descricao": "Anexos da Nota Técnica de Exemplo",
+        "fracionar_zip": true,
+        "motivo": "Exemplo fictício: ZIP acima do limite do POP é fracionado em partes."
+      }
+    },
+    "relatorios_mensais_obra": {
+      "_comentario": "RM-0xx.1 (Relatório Mensal de Acompanhamento de Obras, P2.4) chegam como 1 ZIP por rodovia (PDF assinado + pasta Anexos). POP: PDF não vai em ZIP e nenhum arquivo > 100 MB -> o PDF assinado vira anexo próprio e a pasta Anexos vira ZIP(s) 'Parte NN' <= 95 MB.",
+      "descricao_pdf": "Relatório Mensal de Acompanhamento de Obras",
+      "descricao_anexos": "Anexos do Relatório Mensal de Acompanhamento de Obras",
+      "pasta_originais": "Programa - 3. Desenvolvimento/G2 -  Engenharia/_Produto/15. Setembro 2026/Anexos/P2.4"
+    },
+    "excecoes_desta_competencia": [
+      "Exemplo fictício de exceção aceita só nesta competência (não é regra)."
+    ]
+  },
+  "_abreviacoes": "Aplicadas a TODAS as descrições (consistência), na ordem. Objetivo: nome do arquivo <= nome_max para o caminho caber em 250 caracteres também na pasta Programa - 5. Compartilhado Parceiro / 05. Produtos / NN. Mês AAAA / G2 / Anexos.",
+  "nome_max": 135,
+  "abreviacoes": [
+    [
+      "Ata de reunião de alinhamento da obra e acompanhamento dos serviços",
+      "Ata de Reunião de Alinhamento da Obra"
+    ],
+    [
+      "Avaliação de Conformidade Ambiental e de Segurança e Saúde do Trabalho",
+      "Avaliação de Conformidade Ambiental e SST"
+    ],
+    [
+      "Segurança e Saúde do Trabalho",
+      "SST"
+    ],
+    [
+      "saúde e segurança do trabalho",
+      "SST"
+    ],
+    [
+      "Notificação de não conformidade no Grau de Compactação (GC) da camada de base",
+      "Não Conformidade no Grau de Compactação da Base"
+    ],
+    [
+      "Nota Técnica de Análise de Projeto Executivo",
+      "NT de Análise de Projeto Executivo"
+    ],
+    [
+      "Nota Técnica Análise de Projeto Executivo",
+      "NT de Análise de Projeto Executivo"
+    ],
+    [
+      "Nota Técnica de recebimento de GED",
+      "NT de Recebimento de GED"
+    ],
+    [
+      "Nota Técnica de Recebimento de GED",
+      "NT de Recebimento de GED"
+    ],
+    [
+      "Nota Técnica de Encaminhamento de documentação de Desapropriação",
+      "NT de Encaminhamento de Documentação de Desapropriação"
+    ],
+    [
+      "Análise e Aprovação de Projeto de Traço de Mistura Asfáltica (CBUQ)",
+      "Aprovação de Traço de Mistura Asfáltica (CBUQ)"
+    ],
+    [
+      "Análise e Consolidação do Controle Tecnológico e Topográfico",
+      "Consolidação do Controle Tecnológico e Topográfico"
+    ],
+    [
+      "Avaliação de conformidade pendentes do projeto de drenagem",
+      "Conformidade - Pendências do Projeto de Drenagem"
+    ],
+    [
+      "Resposta à Notificação de Não Conformidade",
+      "Resposta à Não Conformidade"
+    ],
+    [
+      "Projeto de Sinalização e Obras Complementares",
+      "Sinalização e Obras Complementares"
+    ],
+    [
+      "Projeto de Sinalização obras complementares",
+      "Sinalização e Obras Complementares"
+    ],
+    [
+      "Avaliação de conformidade - Desmonte de rocha por detonação",
+      "Conformidade do Desmonte de Rocha por Detonação"
+    ],
+    [
+      "Parecer Técnico - Consolidação do Controle Tecnológico e Topográfico",
+      "Parecer Técnico - Controle Tecnológico e Topográfico"
+    ]
+  ]
+}

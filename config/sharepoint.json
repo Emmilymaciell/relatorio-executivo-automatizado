@@ -1,0 +1,24 @@
+{
+  "_comentario": "Acesso ao SharePoint do Programa pela Microsoft Graph (app-only, Entra ID - Programa). SEM SEGREDO AQUI: o client secret fica FORA do repositório e do OneDrive, em 'arquivo_credenciais' (ou na variável de ambiente PROG_SP_CLIENT_SECRET). Ver docs/COMO-USAR.md § 8 e DEC-052.",
+  "tenant_id": "00000000-0000-0000-0000-000000000000",
+  "client_id": "00000000-0000-0000-0000-000000000000",
+  "object_id": "00000000-0000-0000-0000-000000000000",
+  "hostname": "contoso.sharepoint.com",
+  "site_path": "/sites/exemplo",
+  "biblioteca": "Programa",
+  "arquivo_credenciais": "%USERPROFILE%\\.prog\\sharepoint.env",
+
+  "_mapa": "Pasta LOCAL sincronizada (sob caminhos.json 'prog_root') -> pasta na biblioteca. Pastas locais 'Programa - X' sem entrada aqui mapeiam para 'X' (prefixo_local).",
+  "mapa_local_remoto": {
+    "Programa - 3. Desenvolvimento": "3. Desenvolvimento",
+    "Programa - 4. Produtos": "4. Produtos"
+  },
+  "prefixo_local": "Programa - ",
+
+  "_bloqueios": "Nenhuma escrita pela API em caminhos que contenham estes trechos (comparação sem acento/caixa). Regra permanente 1 do CLAUDE.md.",
+  "bloqueados_escrita": ["Compartilhado Parceiro"],
+
+  "upload_simples_max_mb": 4,
+  "backups_dir": "output/SHAREPOINT_BACKUPS",
+  "log_dir": "logs/sharepoint"
+}

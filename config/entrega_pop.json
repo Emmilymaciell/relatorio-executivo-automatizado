@@ -1,0 +1,260 @@
+{
+  "_comentario": "Regras VARIÁVEIS da entrega mensal ao Parceiro (POP v2026-10-01). Fonte canônica de cada regra: docs/referencias-oficiais/README.md. Regras documentais estáveis ficam no código/docs, não aqui. Lido por scripts/prog_entrega/regras.py.",
+  "versao_regras": "POP-ENTREGA v2026-10-01",
+  "limite_tamanho_mb": 100,
+  "_limite_fonte": "POP Quadro 4 (Tamanho) + Checklist itens 7/9 — máx. 100 MB por arquivo; maior => fracionar em Parte 01, Parte 02...",
+  "grupos": [
+    "G1",
+    "G2",
+    "G3",
+    "G4",
+    "G5"
+  ],
+  "nome_pasta_anexos": "ANEXOS",
+  "_anexos_fonte": "POP Definições + Quadro 2: subpasta ÚNICA 'ANEXOS' por grupo; sem subpastas por produto (decisão da usuária 01/10/2026).",
+  "rodovias": [
+    "RD-101",
+    "RD-102A",
+    "RD-103",
+    "RD-104",
+    "GERAL"
+  ],
+  "_rodovias_fonte": "POP Definições (Rodovia de referência) + Quadro 3.",
+  "termos_genericos": [
+    "documento final",
+    "arquivo final",
+    "arquivo novo",
+    "versão 2",
+    "versao 2",
+    "novo",
+    "nova versão",
+    "cópia",
+    "copia",
+    "final final",
+    "final2",
+    "final 2",
+    "teste",
+    "rascunho"
+  ],
+  "_termos_fonte": "POP Quadro 3 ('arquivo final', 'novo', 'versão 2') + PROMPT/Checklist Parceiro ('documento final', 'arquivo novo', 'cópia', 'final final', 'teste').",
+  "padroes_lista_demandas": [
+    "lista de demandas"
+  ],
+  "padroes_relatorio": [
+    "relatorio grupo",
+    "relatorio de produtos mensal",
+    "relatorio mensal"
+  ],
+  "padroes_indice": [
+    "indice de arquivos",
+    "indice - prestacao",
+    "indice de arquivo"
+  ],
+  "arquivos_lixo": [
+    "thumbs.db",
+    "desktop.ini",
+    ".ds_store"
+  ],
+  "prefixos_temporarios": [
+    "~$",
+    ".~lock."
+  ],
+  "extensoes_temporarias": [
+    ".tmp",
+    ".temp",
+    ".bak",
+    ".part",
+    ".crdownload"
+  ],
+  "indice": {
+    "nome_arquivo": "Índice de Arquivos - Entrega de Produtos Programa - {mes} {ano}.docx",
+    "modelo": "docs/referencias-oficiais/ficticio/Modelo de Indice - Entrega de Produtos (ficticio).docx",
+    "numeracao": "por_grupo",
+    "_obs": "Modelo r2 (usuária, 01/10/2026): título ÍNDICE DE ARQUIVOS : ENTREGA DE PRODUTOS DO PROGRAMA; só subdivisões por GRUPO (sem produto — o produto está no nome do arquivo); numeração reinicia em 1 em cada grupo — DEC-049."
+  },
+  "prazos": {
+    "grupos_dia_util": 3,
+    "coordenacao_dia_util": 5,
+    "_fonte": "POP Quadro 1 e Etapas 1, 5 e 7; Checklist (prazo 3º dia útil; consolidação 4º e 5º; envio até o 5º)."
+  },
+  "feriados_arquivo": "config/feriados.json",
+  "arquivo_interno": {
+    "_comentario": "Para onde a PUBLICAÇÃO move (copia+remove da pasta do mês) Listas de Demandas, Word/minutas/duplicatas do relatório e originais substituídos. Fica FORA de '4. Produtos' para a cópia da pasta do mês ao Parceiro não levar material interno. Sempre há também backup local em output/.",
+    "relativo_prog_root": "Programa - 3. Desenvolvimento\\G1 - Coordenacao\\Desenvolvimento de Produtos\\Controle Interno Entregas"
+  },
+  "produtos": {
+    "_fonte": "Códigos e nomes curtos = subpastas oficiais de '4. Produtos' (acentuação restaurada) e exemplos do POP Quadro 3 ('P2.2 - Análise de Projeto e RPFO', 'P1.4 - TIC'). Ativos por mês = inventário das pastas mensais (07..18/2026).",
+    "P1.1": {
+      "grupo": "G1",
+      "nome": "Gestão Executiva",
+      "aliases": [
+        "Coordenação Geral",
+        "Coordenação Executiva",
+        "Gestao Executiva"
+      ]
+    },
+    "P1.2": {
+      "grupo": "G1",
+      "nome": "Relações Institucionais",
+      "aliases": [
+        "Relacoes Institucionais"
+      ]
+    },
+    "P1.3": {
+      "grupo": "G1",
+      "nome": "Comunicação Integrada",
+      "aliases": [
+        "Comunicacao Integrada"
+      ]
+    },
+    "P1.4": {
+      "grupo": "G1",
+      "nome": "Tecnologia de Informação e Comunicações",
+      "aliases": [
+        "TIC",
+        "Tecnologia de Informacao de Comunicacoes",
+        "Tecnologia da Informação e Comunicações"
+      ]
+    },
+    "P2.1": {
+      "grupo": "G2",
+      "nome": "Coordenação Serviços de Engenharia",
+      "aliases": [
+        "Coordenação dos Serviços de Engenharia",
+        "Coordenacao dos Servicos de Engenharia"
+      ]
+    },
+    "P2.2": {
+      "grupo": "G2",
+      "nome": "Análise de Projeto e RPFO",
+      "aliases": [
+        "Analise de Projeto e RPFO"
+      ]
+    },
+    "P2.3": {
+      "grupo": "G2",
+      "nome": "Documentação Técnica e Administrativa para Contratações",
+      "aliases": [
+        "Documentacao tecnica e administrativa para contratacoes"
+      ]
+    },
+    "P2.4": {
+      "grupo": "G2",
+      "nome": "Gerenciamento Técnico de Obra",
+      "aliases": [
+        "Gerenciamento Tecnico de Obra"
+      ]
+    },
+    "P2.5": {
+      "grupo": "G2",
+      "nome": "Recebimento de Obra",
+      "aliases": []
+    },
+    "P2.6": {
+      "grupo": "G2",
+      "nome": "Licenciamento Ambiental",
+      "aliases": []
+    },
+    "P3.1": {
+      "grupo": "G3",
+      "nome": "Gestão da Certificação",
+      "aliases": [
+        "Gestao da Certificacao"
+      ]
+    },
+    "P3.2": {
+      "grupo": "G3",
+      "nome": "Planos de Inspeção",
+      "aliases": [
+        "Planos de Inspecao"
+      ]
+    },
+    "P3.3": {
+      "grupo": "G3",
+      "nome": "Relatório de Inspeção",
+      "aliases": [
+        "Relatorio de Inspecao"
+      ]
+    },
+    "P4.1": {
+      "grupo": "G4",
+      "nome": "Relatório de Portfólio",
+      "aliases": [
+        "Relatorio de Portifolio",
+        "Relatório de Portifólio"
+      ]
+    },
+    "P4.2": {
+      "grupo": "G4",
+      "nome": "Planos de Controle Financeiro e Contábil",
+      "aliases": [
+        "Planos de Controle Financeiro e Contabil"
+      ]
+    },
+    "P4.3": {
+      "grupo": "G4",
+      "nome": "Plano de Gestão de Riscos e Compliance",
+      "aliases": [
+        "Plano de Gestao de Riscos e Compliance"
+      ]
+    },
+    "P5.1": {
+      "grupo": "G5",
+      "nome": "Acompanhamento Jurídico",
+      "aliases": [
+        "Acompanhamento Juridico"
+      ]
+    },
+    "P5.2": {
+      "grupo": "G5",
+      "nome": "Documentação Jurídica de Contratação",
+      "aliases": [
+        "Documentacao juridica de contratacao"
+      ]
+    },
+    "P5.3": {
+      "grupo": "G5",
+      "nome": "Relatório de Gestão Contratual",
+      "aliases": [
+        "Relatorio de Gestao Contratual"
+      ]
+    },
+    "P5.4": {
+      "grupo": "G5",
+      "nome": "Relatório de Conformidade Legal em ESG",
+      "aliases": [
+        "Relatorio de Conformidade Legal em ESG",
+        "Conformidade Legal e ESG"
+      ]
+    }
+  },
+  "produtos_ativos_padrao": [
+    "P1.1",
+    "P1.2",
+    "P1.3",
+    "P1.4",
+    "P2.1",
+    "P2.2",
+    "P2.4",
+    "P3.1",
+    "P3.2",
+    "P3.3",
+    "P4.1",
+    "P4.2",
+    "P4.3",
+    "P5.1",
+    "P5.2",
+    "P5.3",
+    "P5.4"
+  ],
+  "_produtos_ativos_fonte": "Conjunto presente nas pastas 10. Abril 2026 .. 18. Dezembro 2026. Para um mês com subpastas de produto, o inventário da própria pasta prevalece.",
+  "_termos_obs": "Termo genérico => MANUAL_REVIEW (não BLOCKER): 'teste'/'minuta' podem ser o próprio objeto do documento (ex.: 'Minuta de Contrato' em P5.2). 'minuta' foi retirado da lista de anexos; a regra de minuta vale para o RELATÓRIO (fora de ANEXOS).",
+  "nome_max_caracteres": 180,
+  "_nome_max_obs": "Heurística (não é regra oficial do POP): nomes muito longos geram WARNING.",
+  "renomear_propostas_completas": true,
+  "_renomear_obs": "Na montagem do FINAL, aplica a proposta de nome SÓ quando ela é completa e conforme (código e produto pela pasta de origem, rodovia citada no nome). Original preservado e registrado antes->depois.",
+  "exigir_icp_brasil": false,
+  "_icp_obs": "POP Quadro 4 exige 'assinaturas digitais ... quando exigíveis' sem citar ICP-Brasil; a exigência ICP-Brasil vem só do texto antigo do PROMPT (autoridade 6). Com false, assinatura gov.br/DocuSign válida = PASS e o emissor é informado. Mudar para true se o Parceiro exigir.",
+  "caminho_max_windows": 250,
+  "_caminho_obs": "Heurística técnica (não regra do POP): o Windows Explorer falha em caminhos > 260 caracteres ao copiar a pasta do mês para a pasta compartilhada com o Parceiro."
+}

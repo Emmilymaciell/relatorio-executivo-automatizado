@@ -1,0 +1,48 @@
+# Cartão de identidade do projeto (convenção do plugin os: /os:status e /os:handoff leem daqui).
+# O estado detalhado vive em docs/STATE.md. Se este arquivo estiver desatualizado, ele mente.
+
+identidade:
+  nome: "entrega-de-produtos-coordenacao"
+  titulo: "Entrega de Produtos - Coordenação (Programa)"
+  descricao: "Produz o Relatório de Produtos Mensal do G1 e prepara/valida o pacote mensal G1–G5 pronto para protocolo no Parceiro (POP de Entrega v2026-10-01)."
+  categoria: "work"
+  cliente: "programa"
+  criado_em: "2026-08-11"
+  versao: "2.0.0"            # 1.x = automação do G1 (tags v1.0–v1.4, commits até v1.17); 2.0.0 = escopo Coordenação
+
+classificacao:
+  porte: "aplicacao"
+  criticidade: "alta"         # entrega contratual mensal ao Parceiro
+  dados_sensiveis: true       # documentos do contrato Programa (nunca versionados — ver .gitignore)
+  componente_llm: true        # redação de P1.1/P1.2 e análise de pendências
+
+versionamento:
+  git: true
+  branch_padrao: "master"
+  remoto: ""                  # local, sem remoto (decisão vigente)
+  visibilidade: "privado"
+
+verificacao:
+  tests: true                 # tests/ (pytest) — 48 testes em 01/10/2026
+  evals: false
+  integration_tests: false
+  security_check: true
+  ci: false
+
+execucao:
+  modo_atual: "main-claude"
+  nivel_autonomia: 4
+
+ambiente:
+  python: "3.12"
+  node: "nao-usa"
+  powershell: "5.1"
+  dependencias_externas: ["Office COM (Word/Excel/PowerPoint)", "SharePoint sincronizado via OneDrive", "Power BI (export manual)"]
+
+portfolio:
+  elegivel: false
+  exposicao: "nenhuma"
+
+estado:
+  fase: "operacao + evolucao (Coordenação)"
+  ultimo_checkpoint: "v2.0.0 (2026-10-01)"

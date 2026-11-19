@@ -1,0 +1,43 @@
+{
+  "_comentario": "Caminhos LOCAIS descobertos nesta máquina. Se 'prog_root' ficar null, prog_config.py localiza automaticamente a pasta que contém '3. Desenvolvimento' e '4. Produtos'. NÃO dependa de nomes exatos: o código ignora acentos/maiúsculas.",
+
+  "prog_root": "C:\\caminho\\exemplo\\Dynatest Engenharia",
+
+  "relativos": {
+    "desenvolvimento": "Programa - 3. Desenvolvimento",
+    "produtos": "Programa - 4. Produtos",
+    "g1_coordenacao": "Programa - 3. Desenvolvimento\\G1 - Coordenacao",
+    "desenvolvimento_produtos": "Programa - 3. Desenvolvimento\\G1 - Coordenacao\\Desenvolvimento de Produtos",
+    "g2_engenharia": "Programa - 3. Desenvolvimento\\G2 -  Engenharia"
+  },
+
+  "fontes": {
+    "controle_demandas_acumulado": "Programa - 3. Desenvolvimento\\G1 - Coordenacao\\Desenvolvimento de Produtos\\P.1.1 - Controle de demandas Programa.xlsx",
+    "dashboard_pbix": "Programa - 3. Desenvolvimento\\G1 - Coordenacao\\Desenvolvimento de Produtos\\P.1.1 - Dashboard - Análise de Entregas Programa.pbix",
+    "lista_mestre_g2": "Programa - 3. Desenvolvimento\\G2 -  Engenharia\\00_ Lista mestre.xlsx",
+    "controle_reunioes": "Programa - 3. Desenvolvimento\\G1 - Coordenacao\\Desenvolvimento de Produtos\\P1.2 - Controle de Reuniões.xlsx",
+    "medicao_parceiro_pasta": "Programa - 3. Desenvolvimento\\G1 - Coordenacao\\Desenvolvimento de Produtos\\Medicao Parceiro"
+  },
+
+  "classificacao_arquivos": {
+    "MODIFICAVEL_COM_BACKUP": [
+      "P.1.1 - Controle de demandas Programa.xlsx (fonte do Power BI; só ACRESCENTAR linhas da nova versão, nunca alterar antigas; backup obrigatório antes)"
+    ],
+    "SOMENTE_LEITURA_FONTE_OFICIAL": [
+      "00_ Lista mestre.xlsx (G2)",
+      "PROG_Lista de demandas G1/G3/G4/G5 (pasta mensal)",
+      "Quadro Financeiro do mês (fornecido pela equipe)",
+      "P1.2 - Controle de Reuniões (usar versão mais recente enviada)",
+      "Relatório CG RevCG (base; trabalhar em CÓPIA)"
+    ],
+    "SOMENTE_MODELO_VISUAL": [
+      "Quadro Financeiro/Timeline/Reuniões do mês anterior (referência de layout, NÃO de dados)"
+    ],
+    "NUNCA_MODIFICAR": [
+      "Qualquer arquivo original do SharePoint (exceto o acumulado autorizado). Não excluir, mover, renomear ou sobrescrever."
+    ]
+  },
+
+  "saida_relatorio_g1": "Programa - 4. Produtos\\{pasta_mensal}\\G1  (DOCX+PDF finais; versionar _v2/_v3 se já existir; nunca sobrescrever)",
+  "pasta_arquivos_gerados": "Programa - 3. Desenvolvimento\\G1 - Coordenacao\\Desenvolvimento de Produtos\\Obsoleto\\Programa RM{n} {Mes} {ano} - Arquivos Gerados (Corpo/ + Anexos/)"
+}

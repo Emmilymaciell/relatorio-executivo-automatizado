@@ -1,0 +1,10 @@
+{
+  "_comentario": "Feriados usados SÓ para ESTIMAR o Nº dia útil (prazos do POP). Não é calendário oficial do contrato: o resultado é sempre exibido como 'estimado'. Feriados ESTADUAIS e MUNICIPAIS NÃO estão configurados — incluir aqui, com fonte, se a usuária confirmar que contam para o prazo.",
+  "confirmado_pela_usuaria": false,
+  "fonte": "Feriados nacionais: Lei 662/1949 (com Lei 10.607/2002), Lei 6.802/1980 (12/out), Lei 14.759/2023 (20/nov); Sexta-feira Santa como feriado religioso (Lei 9.093/1995). Carnaval e Corpus Christi são ponto facultativo e NÃO entram.",
+  "nacionais": {
+    "2026": ["2026-01-01", "2026-04-03", "2026-04-21", "2026-05-01", "2026-09-07", "2026-10-12", "2026-11-02", "2026-11-15", "2026-11-20", "2026-12-25"],
+    "2027": ["2027-01-01", "2027-03-26", "2027-04-21", "2027-05-01", "2027-09-07", "2027-10-12", "2027-11-02", "2027-11-15", "2027-11-20", "2027-12-25"]
+  },
+  "estaduais_municipais": {}
+}
