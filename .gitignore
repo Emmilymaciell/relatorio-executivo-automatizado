@@ -1,0 +1,132 @@
+# =============================================================================
+# .gitignore — Automação Relatório Grupo 1 (Programa)
+# O Git versiona SOMENTE a AUTOMAÇÃO (Skill, references, scripts, prog_config.py,
+# configs de EXEMPLO, documentação). NUNCA documentos operacionais/confidenciais
+# do Programa, saídas mensais, caches ou credenciais. Repositório LOCAL (sem remoto).
+# =============================================================================
+
+# --- Python: caches e bytecode -----------------------------------------------
+__pycache__/
+*.py[cod]
+*.pyo
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ipynb_checkpoints/
+
+# --- Saídas de trabalho do mês (output/) — manter só o README -----------------
+/output/*
+!/output/README.txt
+
+# --- Logs de execução (logs/) — manter só o README ----------------------------
+/logs/*
+!/logs/README.txt
+
+# --- Parâmetros e conteúdo OPERACIONAL do mês (NUNCA versionar) ----------------
+# O template parametros-exemplo.json É versionado; o real parametros.json não.
+/config/parametros.json
+# dados_mes.py real (textos/marcos/medições factuais da competência): NUNCA.
+/config/dados_mes.py
+
+# --- Baseline confidencial (RM13 v5) — binários reais do Programa ------------------
+# Mantidos LOCALMENTE (não excluir); apenas fora do Git. A documentação .md que
+# explica qual baseline usar e onde ele está permanece versionada (examples/*.md).
+/examples/baseline/
+
+# --- Documentos operacionais / cópias baixadas do SharePoint (safety net) -----
+# Nenhum documento Office ou relatório operacional entra no Git em lugar algum.
+*.doc
+*.docx
+*.dot
+*.dotx
+*.xls
+*.xlsx
+*.xlsm
+*.xlsb
+*.xltx
+*.csv
+*.ppt
+*.pptx
+*.potx
+*.pdf
+*.pbix
+*.pbit
+
+# --- Imagens temporárias (prints/recortes gerados pelo pipeline) --------------
+*.png
+# Exceção: assets PERMANENTES da Skill (ex.: logo do Programa reinserida no print de reuniões
+# quando o anexo do mês vem sem a forma — DEC-027). Versionar, não é arquivo gerado.
+!.claude/skills/relatorio-prog-grupo1/assets/*.png
+*.jpg
+*.jpeg
+*.gif
+*.bmp
+*.tif
+*.tiff
+*.emf
+*.wmf
+
+# --- Arquivos temporários do Office / bloqueio (~$, .tmp) ---------------------
+~$*
+*.~*
+*.tmp
+*.temp
+*.bak
+
+# --- Credenciais, tokens, cookies, segredos, .env ----------------------------
+.env
+.env.*
+!.env.example
+*.env
+*.key
+*.pem
+*.pfx
+*.p12
+*.pkcs12
+*.crt
+*.cer
+*.der
+*.jks
+*.keystore
+*secret*
+*secrets*
+*token*
+*cookie*
+*cookies*
+*credential*
+*credentials*
+*password*
+*.htpasswd
+secrets/
+.secrets/
+.aws/
+.azure/
+.msal_cache*
+*.sqlite
+
+# --- Scratchpad / trabalho temporário -----------------------------------------
+scratchpad/
+.scratchpad/
+tmp/
+temp/
+
+# --- Lixo de SO / editor ------------------------------------------------------
+Thumbs.db
+ehthumbs.db
+desktop.ini
+.DS_Store
+*.swp
+*~
+.vscode/
+.idea/
+
+# --- Referências OFICIAIS aprovadas do processo de entrega (POP, Checklist, Modelo de Índice, Fluxograma) ---
+# Exceção DELIBERADA (01/10/2026): são procedimentos/modelos sem dados operacionais e são fonte canônica do
+# projeto (docs/referencias-oficiais/README.md, com SHA-256). Nenhum outro documento Office/PDF entra no Git.
+!/docs/referencias-oficiais/**/*.docx
+!/docs/referencias-oficiais/**/*.xlsx
+!/docs/referencias-oficiais/**/*.pdf
+
+# --- Divulgações registradas (cópias carimbadas dos documentos do POP efetivamente enviadas às consorciadas) ---
+# Exceção DELIBERADA (02/10/2026, DEC-050): mesmos documentos de procedimento (sem dados operacionais), guardados
+# exatamente como foram entregues, com SHA-256 no README da pasta.

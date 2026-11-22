@@ -1,0 +1,10 @@
+# Python 3.12 (Windows) - dependencias usadas pelos scripts e testes
+pymupdf>=1.26          # fitz: PDF (leitura, render, fracionamento)
+python-docx>=1.1       # Word: relatorio G1 e Indice
+openpyxl>=3.1          # Excel: acumulado/listas (G1)
+python-pptx>=0.6       # Timeline (G1)
+pandas>=2.0            # G1
+pillow>=10.0           # imagens (G1)
+cryptography>=42       # verificacao de assinaturas PAdES/CMS
+pywin32>=306           # Office COM (Word/Excel/PowerPoint) - so Windows
+pytest>=8.0            # testes

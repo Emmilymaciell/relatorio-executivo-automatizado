@@ -1,0 +1,42 @@
+{
+ "_comentario": "EXEMPLO FICTÍCIO (versão pública). Reorganização da pasta do mês no formato do POP (DEC-070), executada por scripts/manutencao/reorganizar_mes_pop.py. Cada decisão tem motivo; o nome segue o próprio documento quando ele contradiz a lista do grupo (DEC-051). Listas de Demandas não são editadas.",
+ "16": {
+  "autorizado_por": "usuária (exemplo fictício)",
+  "indice_extra": {
+   "G1": [
+    "Programa - Relatório Grupo 1 - Relatório de Produtos Mensal N°16 - 01.10 a 31.10.pdf"
+   ]
+  },
+  "_indice_extra": "relatório do G1 entra na raiz do G1 após a assinatura (DEC-069); linha mantida no Índice",
+  "renomear": [
+   {
+    "de": "G1/ANEXOS/P1.3 - Comunicação Integrada - 1 Documento de Exemplo.pdf",
+    "para": "G1/ANEXOS/P1.3 - Comunicação Integrada - 1 Documento de Exemplo - GERAL.pdf",
+    "motivo": "POP Quadro 3: último bloco = rodovia; documento geral do Programa -> GERAL"
+   }
+  ],
+  "retirar": [
+   {
+    "de": "G2/ANEXOS/P2.2 - Análise de Projeto - NT de Exemplo - PA-501.1 - RD-101.pdf",
+    "motivo": "DUPLICADO (exemplo fictício): mesmo SHA-256 de outro arquivo do pacote"
+   }
+  ],
+  "novos": [
+   {
+    "tipo": "desmembrar_zip",
+    "de": "G2/ANEXOS/P2.4 - Gerenciamento Técnico de Obra - Relatório de Exemplo - RAD-001.1 - RD-102A.zip",
+    "pdf": "G2/ANEXOS/P2.4 - Gerenciamento Técnico de Obra - Relatório de Exemplo - RAD-001.1 - RD-102A.pdf",
+    "anexos_stem": "G2/ANEXOS/P2.4 - Gerenciamento Técnico de Obra - Anexos do Relatório de Exemplo - RAD-001.1",
+    "rodovia": "RD-102A",
+    "motivo": "ZIP com PDF + anexos: o PDF vira anexo próprio e os anexos vão em ZIP (exemplo fictício)"
+   },
+   {
+    "tipo": "zip_individual",
+    "de": "G5/ANEXOS/P5.3 - Relatório de Gestão Contratual - Planilha de Exemplo - RD-104.xlsx",
+    "zip": "G5/ANEXOS/P5.3 - Relatório de Gestão Contratual - Planilha de Exemplo - RD-104.zip",
+    "interno": "P5.3 - Relatório de Gestão Contratual - Planilha de Exemplo - RD-104.xlsx",
+    "motivo": "POP Quadro 3: arquivo que não é PDF vai em ZIP individual (exemplo fictício)"
+   }
+  ]
+ }
+}
